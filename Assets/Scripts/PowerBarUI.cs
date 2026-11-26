@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System;
 using Unity.VisualScripting;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 [System.Serializable]
 public class PowerData
 {
     public string name;
     public Sprite icon;
+    public Key key = Key.Q;
+    public float cooldown = 5f;
 }
 
 public class PowerBarUI : MonoBehaviour

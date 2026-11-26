@@ -172,6 +172,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerSlotUI
   iconImage: {fileID: 1045244834}
+  circleImage: {fileID: 0}
+  cooldownText: {fileID: 0}
+  keyText: {fileID: 0}
+  readyColor: {r: 1, g: 1, b: 1, a: 1}
+  cooldownColor: {r: 0.35, g: 0.35, b: 0.35, a: 1}
 --- !u!114 &133250279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +281,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerSlotUI
   iconImage: {fileID: 371552343}
+  circleImage: {fileID: 0}
+  cooldownText: {fileID: 0}
+  keyText: {fileID: 0}
+  readyColor: {r: 1, g: 1, b: 1, a: 1}
+  cooldownColor: {r: 0.35, g: 0.35, b: 0.35, a: 1}
 --- !u!114 &198586877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +496,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerSlotUI
   iconImage: {fileID: 1865399918}
+  circleImage: {fileID: 0}
+  cooldownText: {fileID: 0}
+  keyText: {fileID: 0}
+  readyColor: {r: 1, g: 1, b: 1, a: 1}
+  cooldownColor: {r: 0.35, g: 0.35, b: 0.35, a: 1}
 --- !u!114 &360946879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,6 +837,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerSlotUI
   iconImage: {fileID: 510753153}
+  circleImage: {fileID: 0}
+  cooldownText: {fileID: 0}
+  keyText: {fileID: 0}
+  readyColor: {r: 1, g: 1, b: 1, a: 1}
+  cooldownColor: {r: 0.35, g: 0.35, b: 0.35, a: 1}
 --- !u!114 &480789629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -930,14 +950,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PowerBarUI
   slotPrefab: {fileID: 8244838405817833355, guid: a943776e78fe9b64a864bd5e026e319d, type: 3}
   powers:
-  - name: 
+  - name: Sztanga
     icon: {fileID: 6919188041766755181, guid: a53a0f62a3e95514fa5f9e9fe615e627, type: 3}
-  - name: 
+    key: 31
+    cooldown: 5
+  - name: "Cie\u0144 Jaruzela"
     icon: {fileID: 6199035235904854359, guid: a1c8c919f7ae06843b1e71a5ab16760e, type: 3}
-  - name: 
+    key: 37
+    cooldown: 10
+  - name: Dziurawe gacie
     icon: {fileID: 4377565237356865491, guid: 31faa62eedf4a1940b1009e28f820711, type: 3}
-  - name: 
+    key: 19
+    cooldown: 14
+  - name: Napinka
     icon: {fileID: 2508523758485206390, guid: 4f5b6b6d0d83644419333f6e0edb094d, type: 3}
+    key: 32
+    cooldown: 30
 --- !u!114 &485158933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2051,6 +2079,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerSlotUI
   iconImage: {fileID: 253105924}
+  circleImage: {fileID: 0}
+  cooldownText: {fileID: 0}
+  keyText: {fileID: 0}
+  readyColor: {r: 1, g: 1, b: 1, a: 1}
+  cooldownColor: {r: 0.35, g: 0.35, b: 0.35, a: 1}
 --- !u!114 &1142719486
 MonoBehaviour:
   m_ObjectHideFlags: 0
