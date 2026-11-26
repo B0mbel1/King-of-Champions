@@ -22,16 +22,16 @@ MonoBehaviour:
   m_AdditionalPlatformBuildSettings: []
   m_OverrideGlobalSceneList: 1
   m_Scenes:
-  - m_enabled: 1
+  - m_enabled: 0
     m_path: Assets/Scenes/GameMap.unity
     m_guid: 8c9cfa26abfee488c85f1582747f6a02
-  - m_enabled: 1
+  - m_enabled: 0
     m_path: Assets/Scenes/Main Menu.unity
     m_guid: 33edb3c0a0715c8449aee7e7b9eb4a4e
   - m_enabled: 1
     m_path: Assets/Scenes/CharacterMenu.unity
     m_guid: cea6dcdf4ceaa38469d6c7af7c6f5a5d
-  - m_enabled: 1
+  - m_enabled: 0
     m_path: Assets/Scenes/SettingsMenu.unity
     m_guid: 3be4920803f0b0c4d8316501ebe9020e
   m_HasScriptingDefines: 0
