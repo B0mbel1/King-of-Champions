@@ -908,6 +908,9 @@ MonoBehaviour:
   - {fileID: 2676926644508939002, guid: 48aa3a1d41636104aae53b1807b2515e, type: 3}
   spawnPoint: {fileID: 2108687866}
   nameText: {fileID: 482518601}
+  characters:
+  - displayName: Wojfer87
+    prefab: {fileID: 2676926644508939002, guid: 48aa3a1d41636104aae53b1807b2515e, type: 3}
 --- !u!1 &2043021937
 GameObject:
   m_ObjectHideFlags: 0

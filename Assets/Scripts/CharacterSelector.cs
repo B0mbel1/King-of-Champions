@@ -2,11 +2,19 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[System.Serializable]
+public class CharacterEntry
+{
+    public string displayName;
+    public GameObject prefab;
+}
+
 public class CharacterSelector : MonoBehaviour
 {
-    [SerializeField] private GameObject[] characterPrefabs;
+    [SerializeField] private CharacterEntry[] characters;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private TMP_Text nameText;
+    [SerializeField] private float characterScale = 0.4f;
 
     private int index;
     private GameObject current;
@@ -29,14 +37,23 @@ public class CharacterSelector : MonoBehaviour
 
     private void Show(int newIndex)
     {
-        if (characterPrefabs.Length == 0) return;
+        if (characters.Length == 0) return;
 
-        index = (newIndex % characterPrefabs.Length + characterPrefabs.Length) % characterPrefabs.Length;
+        // Zawijanie: po ostatniej wraca do pierwszej i odwrotnie
+        index = (newIndex % characters.Length + characters.Length) % characters.Length;
 
         if (current != null) Destroy(current);
 
-        current = Instantiate(characterPrefabs[index], spawnPoint.position, Quaternion.identity);
+        CharacterEntry entry = characters[index];
+        current = Instantiate(entry.prefab, spawnPoint.position, Quaternion.identity);
+        current.transform.localScale = Vector3.one * characterScale;
 
-        if (nameText != null) nameText.text = characterPrefabs[index].name;
+        if (nameText != null) nameText.text = entry.displayName;
+    }
+
+    public void Confirm()
+    {
+        PlayerPrefs.SetInt("SelectedCharacter", index);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
     }
 }
